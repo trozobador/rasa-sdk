@@ -52,6 +52,14 @@ def Restarted(timestamp=None):
 
 
 # noinspection PyPep8Naming
+def NewUserGoal(timestamp=None):
+    return {
+        "event": "new_user_goal",
+        "timestamp": timestamp,
+    }
+
+
+# noinspection PyPep8Naming
 def UserUtteranceReverted(timestamp=None):
     return {
         "event": "rewind",
